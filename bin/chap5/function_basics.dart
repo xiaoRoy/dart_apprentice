@@ -39,6 +39,6 @@ String compliement(String name) {
   return '$name is a very nice person.';
 }
 
-complimentWithOptionalType(name) {
+String complimentWithOptionalType(name) {
   return '$name is a very nice persion';
 } 
