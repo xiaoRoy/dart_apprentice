@@ -43,9 +43,10 @@ class UserA {
   int _id;
   String _name;
 
+  // Named parameters can’t start with an underscore.
   // UserA({required this.id, this._name = 'anonymous'});
 
-  // Named parameters can’t start with an underscore.
+
   UserA({required int id, String name = 'anonymous'})
       : _id = id,
         _name = name;
