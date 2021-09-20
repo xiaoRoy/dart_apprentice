@@ -1,4 +1,3 @@
-import 'constructor.dart';
 
 void main(List<String> args) {
   final first = User.noOne();
@@ -12,7 +11,11 @@ class User {
   final int _id;
   final String _name;
 
-  const User({int id = 0, String name = 'anonymous'})
+  static const _anonymousId = 0;  
+  
+  static const _anonymousName = 'anonymous';
+
+  const User({int id = _anonymousId, String name = _anonymousName})
       : _id = id,
         _name = name;
 
@@ -22,9 +25,24 @@ class User {
     return User(id: -1, name: 'NoOne');
   }
 
-  factory User.fromJson(Map<String, Object> userJosn) {
-    final id = userJosn['id'] as int;
-    final name = userJosn['name'] as String;
+  factory User.fromJson(Map<String, Object> userJson) {
+    final id = userJson['id'] as int;
+    final name = userJson['name'] as String;
+    return User(id: id, name: name);
+  }
+  
+
+  int get id => _id;
+
+  String get name => _name;
+
+  bool get isLongName {
+    return _name.length > 10;
+  }
+
+  static User fromResponse(Map<String, Object> response) {
+    final id = response['id'] as int;
+    final name = response['name'] as String;
     return User(id: id, name: name);
   }
 
