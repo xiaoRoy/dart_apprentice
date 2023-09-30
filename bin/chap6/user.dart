@@ -1,4 +1,3 @@
-
 void main(List<String> args) {
   final first = User.noOne();
   print(first.hashCode);
@@ -11,8 +10,8 @@ class User {
   final int _id;
   final String _name;
 
-  static const _anonymousId = 0;  
-  
+  static const _anonymousId = 0;
+
   static const _anonymousName = 'anonymous';
 
   const User({int id = _anonymousId, String name = _anonymousName})
@@ -30,7 +29,6 @@ class User {
     final name = userJson['name'] as String;
     return User(id: id, name: name);
   }
-  
 
   int get id => _id;
 

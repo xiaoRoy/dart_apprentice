@@ -1,6 +1,3 @@
-
-
-
 //firsr-class citizen
 
 void assignFunctionsToVariabel() {
@@ -9,9 +6,7 @@ void assignFunctionsToVariabel() {
   };
 }
 
-void passFuntionToFunction(Function function) {
-
-}
+void passFuntionToFunction(Function function) {}
 
 Function returnFunctionFromFunction() {
   return (String message) {
@@ -35,7 +30,7 @@ void showReturningAFunction() {
 
 Function createCounter() {
   var count = 1;
-  return  () {
+  return () {
     count += 1;
     return count;
   };
