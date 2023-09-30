@@ -1,5 +1,3 @@
-
-
 void main(List<String> args) {
   createAObject();
 }
@@ -30,6 +28,6 @@ void createAObject() {
 
 void useCascadeNotation() {
   final user = User()
-  ..id = 12
-  ..name = 'Kate';
+    ..id = 12
+    ..name = 'Kate';
 }

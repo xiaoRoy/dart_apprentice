@@ -1,5 +1,3 @@
-
-
 void main(List<String> args) {
   // checkTypeAtRuntime();
   // learnMixedTypeInOperation();
@@ -7,7 +5,6 @@ void main(List<String> args) {
   // learnCastDown();
   exercise();
 }
-
 
 void checkTypeAtRuntime() {
   const four = 4;

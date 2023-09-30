@@ -7,8 +7,8 @@ void main(List<String> args) {
   // learnInterpolation();
   // learnMulitpleLineString();
   // learnRawString();
-    insertUnicode();
-  }
+  insertUnicode();
+}
 
 void showUnicode() {
   const hello = 'hello';

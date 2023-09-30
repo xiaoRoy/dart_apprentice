@@ -31,8 +31,7 @@ void learnForEachLoops() {
 
 //Fibonacci
 int calculateFibonacci(int input) {
-
-  //strat with 1        
+  //strat with 1
   if (input <= 0) throw ArgumentError();
   var result = 0;
   // if (input > 2) {
